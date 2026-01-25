@@ -80,6 +80,17 @@
             color: var(--secondary-color);
         }
         
+        .contact-item a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .contact-item a:hover {
+            color: var(--secondary-color);
+            text-decoration: underline;
+        }
+        
         .main-content {
             display: grid;
             grid-template-columns: 2fr 1fr;
@@ -327,6 +338,11 @@
             .resume-container {
                 box-shadow: none;
             }
+            
+            .contact-item a {
+                color: black;
+                text-decoration: none;
+            }
         }
     </style>
 </head>
@@ -348,11 +364,11 @@
                 </div>
                 <div class="contact-item">
                     <i class="fas fa-envelope"></i>
-                    <span>ashrafdiu1973@gmail.com</span>
+                    <a href="mailto:ashrafdiu1973@gmail.com">ashrafdiu1973@gmail.com</a>
                 </div>
                 <div class="contact-item">
                     <i class="fab fa-linkedin"></i>
-                    <span>ashrafuzzaman1973</span>
+                    <a href="https://www.linkedin.com/in/ashrafuzzaman1973" target="_blank">ashrafuzzaman1973</a>
                 </div>
             </div>
         </div>
