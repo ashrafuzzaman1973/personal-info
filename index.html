@@ -3,371 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <meta name="google-site-verification" content="MZLOPpwACSnTp84WEcOJsnERs_HlAIqDoEEP9P-0ibM" />
-    <title>Ashrafuzzaman Ashraf | Full Stack Developer | Laravel & Vue.js Expert</title>
     <meta name="description" content="Ashrafuzzaman Ashraf is a Full Stack Developer from Bangladesh with 7+ years experience in Laravel, Vue.js, and modern web technologies.">
-
-    <!-- 🔍 KEYWORDS (optional but helpful) -->
     <meta name="keywords" content="Ashrafuzzaman Ashraf, Full Stack Developer Bangladesh, Laravel Developer, Vue.js Developer, Nuxt.js Developer">
-
-    <!-- 👤 AUTHOR -->
     <meta name="author" content="Ashrafuzzaman Ashraf">
 
-    <!-- 📱 OPEN GRAPH (Facebook / LinkedIn preview) -->
     <meta property="og:title" content="Ashrafuzzaman Ashraf | Full Stack Developer">
     <meta property="og:description" content="7+ years experienced Laravel & Vue.js developer from Bangladesh.">
     <meta property="og:url" content="https://ashrafuzzaman1973.github.io/personal-info/">
     <meta property="og:type" content="website">
 
-     <!-- 🐦 TWITTER CARD -->
-    <meta name="twitter:title" content="Ashrafuzzaman Ashraf | Full Stack Developer">
-    <meta name="twitter:description" content="Laravel, Vue.js & Nuxt.js expert from Bangladesh.">
+    <link rel="canonical" href="https://ashrafuzzaman1973.github.io/personal-info/">
+    <title>Ashrafuzzaman Ashraf | Senior Full Stack Developer</title>
 
-    <!-- 🔗 CANONICAL -->
-   <link rel="canonical" href="https://ashrafuzzaman1973.github.io/personal-info/">
-    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    
     <style>
         :root {
-            --primary-color: #2c3e50;
-            --secondary-color: #3498db;
-            --accent-color: #e74c3c;
-            --light-bg: #f9f9f9;
-            --border-color: #e0e0e0;
-            --text-color: #333;
-            --light-text: #666;
+            --primary: #2c3e50;
+            --secondary: #3498db;
+            --text: #333;
+            --light-text: #5f6368;
+            --border: #eaedf0;
+            --sidebar-bg: #f8f9fa;
         }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Roboto', sans-serif; line-height: 1.5; color: var(--text); background: #f0f2f5; padding: 20px; }
         
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
+        .resume-wrapper { 
+            max-width: 1000px; margin: 0 auto; background: white; 
+            display: grid; grid-template-columns: 1fr 320px; 
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1); 
         }
+
+        header { 
+            grid-column: 1 / span 2; background: var(--primary); color: white; 
+            padding: 35px 50px; display: flex; justify-content: space-between; align-items: center; 
+        }
+        header h1 { font-family: 'Poppins'; font-size: 2.2rem; letter-spacing: -0.5px; }
+        header h2 { color: var(--secondary); font-size: 1.1rem; font-weight: 400; margin-top: 5px; }
         
-        body {
-            font-family: 'Roboto', sans-serif;
-            line-height: 1.6;
-            color: var(--text-color);
-            background-color: #f5f7fa;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
+        .header-contact { text-align: right; font-size: 0.85rem; }
+        .header-contact div { margin-bottom: 4px; }
+        .header-contact a { color: white; text-decoration: none; transition: 0.3s; }
+        .header-contact a:hover { color: var(--secondary); }
+
+        .main-content { padding: 40px 50px; border-right: 1px solid var(--border); }
+        .sidebar { padding: 40px 30px; background: var(--sidebar-bg); }
+
+        section { margin-bottom: 35px; }
+        .section-title { 
+            font-family: 'Poppins'; font-size: 1.1rem; text-transform: uppercase; 
+            color: var(--primary); border-bottom: 2px solid var(--secondary); 
+            padding-bottom: 5px; margin-bottom: 15px; display: flex; align-items: center;
         }
+        .section-title i { margin-right: 10px; color: var(--secondary); }
+
+        .item { margin-bottom: 25px; }
+        .item-header { display: flex; justify-content: space-between; align-items: baseline; }
+        .item-title { font-weight: 700; font-size: 1.05rem; color: var(--primary); }
+        .item-sub { color: var(--secondary); font-weight: 600; font-size: 0.95rem; margin: 2px 0; }
+        .item-date { font-size: 0.85rem; color: var(--light-text); font-style: italic; }
         
-        .resume-container {
-            background-color: white;
-            border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
-            overflow: hidden;
+        .bullet-list { margin-top: 8px; padding-left: 18px; font-size: 0.9rem; color: var(--light-text); }
+        .bullet-list li { margin-bottom: 6px; position: relative; list-style: none; }
+        .bullet-list li::before { content: "•"; color: var(--secondary); position: absolute; left: -15px; font-weight: bold; }
+
+        .skill-category { margin-bottom: 20px; }
+        .skill-category h4 { font-size: 0.85rem; text-transform: uppercase; margin-bottom: 10px; color: var(--primary); }
+        .tag-container { display: flex; flex-wrap: wrap; gap: 6px; }
+        .tag { 
+            background: white; border: 1px solid #dce1e6; padding: 4px 10px; 
+            border-radius: 4px; font-size: 0.8rem; font-weight: 500; 
         }
-        
-        .header {
-            background-color: var(--primary-color);
-            color: white;
-            padding: 30px 40px;
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
+
+        .training-item { margin-bottom: 15px; font-size: 0.82rem; line-height: 1.3; }
+        .training-item strong { display: block; color: var(--primary); margin-bottom: 2px; }
+
+        .actions { text-align: center; margin-top: 30px; }
+        .btn { 
+            padding: 12px 25px; background: var(--secondary); color: white; border: none; 
+            border-radius: 5px; cursor: pointer; font-family: 'Poppins'; font-weight: 600; text-transform: uppercase;
         }
-        
-        .name-title h1 {
-            font-family: 'Poppins', sans-serif;
-            font-size: 2.5rem;
-            font-weight: 700;
-            margin-bottom: 5px;
-        }
-        
-        .name-title h2 {
-            font-weight: 400;
-            font-size: 1.2rem;
-            color: #ecf0f1;
-        }
-        
-        .contact-info {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-        
-        .contact-item {
-            margin-bottom: 8px;
-            display: flex;
-            align-items: center;
-        }
-        
-        .contact-item i {
-            width: 20px;
-            margin-right: 10px;
-            color: var(--secondary-color);
-        }
-        
-        .contact-item a {
-            color: white;
-            text-decoration: none;
-            transition: color 0.3s;
-        }
-        
-        .contact-item a:hover {
-            color: var(--secondary-color);
-            text-decoration: underline;
-        }
-        
-        .main-content {
-            display: grid;
-            grid-template-columns: 2fr 1fr;
-            gap: 30px;
-            padding: 40px;
-        }
-        
-        .left-column {
-            border-right: 1px solid var(--border-color);
-            padding-right: 30px;
-        }
-        
-        .section {
-            margin-bottom: 35px;
-        }
-        
-        .section-title {
-            font-family: 'Poppins', sans-serif;
-            font-size: 1.5rem;
-            font-weight: 600;
-            color: var(--primary-color);
-            border-bottom: 2px solid var(--secondary-color);
-            padding-bottom: 8px;
-            margin-bottom: 20px;
-            position: relative;
-        }
-        
-        .section-title i {
-            margin-right: 10px;
-            color: var(--secondary-color);
-        }
-        
-        .professional-summary p {
-            font-size: 1.05rem;
-            line-height: 1.7;
-            color: var(--light-text);
-        }
-        
-        .experience-item, .education-item, .project-item {
-            margin-bottom: 25px;
-            padding-bottom: 20px;
-            border-bottom: 1px dashed var(--border-color);
-        }
-        
-        .experience-item:last-child, .education-item:last-child, .project-item:last-child {
-            border-bottom: none;
-        }
-        
-        .job-title {
-            font-family: 'Poppins', sans-serif;
-            font-weight: 600;
-            font-size: 1.2rem;
-            color: var(--primary-color);
-        }
-        
-        .company {
-            color: var(--secondary-color);
-            font-weight: 500;
-            margin: 5px 0;
-        }
-        
-        .date {
-            color: var(--light-text);
-            font-size: 0.9rem;
-            margin-bottom: 10px;
-            display: inline-block;
-            background-color: var(--light-bg);
-            padding: 3px 10px;
-            border-radius: 12px;
-        }
-        
-        .responsibilities {
-            margin-top: 10px;
-            padding-left: 20px;
-        }
-        
-        .responsibilities li {
-            margin-bottom: 8px;
-            position: relative;
-        }
-        
-        .responsibilities li:before {
-            content: "•";
-            color: var(--secondary-color);
-            font-weight: bold;
-            position: absolute;
-            left: -15px;
-        }
-        
-        .competency-list {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            margin-top: 10px;
-        }
-        
-        .competency-item {
-            background-color: var(--light-bg);
-            padding: 8px 15px;
-            border-radius: 20px;
-            font-size: 0.9rem;
-            color: var(--primary-color);
-            border-left: 3px solid var(--secondary-color);
-        }
-        
-        .technical-list {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-            gap: 10px;
-        }
-        
-        .tech-category {
-            margin-bottom: 15px;
-        }
-        
-        .tech-category h4 {
-            color: var(--primary-color);
-            margin-bottom: 5px;
-            font-size: 1rem;
-        }
-        
-        .tech-category ul {
-            list-style: none;
-            padding-left: 5px;
-        }
-        
-        .tech-category li {
-            margin-bottom: 3px;
-            color: var(--light-text);
-        }
-        
-        .language-item {
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 10px;
-        }
-        
-        .language-name {
-            font-weight: 500;
-        }
-        
-        .language-level {
-            color: var(--light-text);
-            font-size: 0.9rem;
-        }
-        
-        .additional-info {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-            gap: 15px;
-        }
-        
-        .info-item {
-            background-color: var(--light-bg);
-            padding: 15px;
-            border-radius: 5px;
-        }
-        
-        .info-item h4 {
-            color: var(--primary-color);
-            margin-bottom: 5px;
-            font-size: 0.95rem;
-        }
-        
-        .info-item p {
-            color: var(--light-text);
-            font-size: 0.9rem;
-        }
-        
-        .project-links {
-            margin-top: 5px;
-            font-size: 0.9rem;
-        }
-        
-        .project-links a {
-            color: var(--secondary-color);
-            text-decoration: none;
-        }
-        
-        .project-links a:hover {
-            text-decoration: underline;
-        }
-        
-        @media (max-width: 900px) {
-            .main-content {
-                grid-template-columns: 1fr;
-                gap: 20px;
-                padding: 25px;
-            }
-            
-            .left-column {
-                border-right: none;
-                padding-right: 0;
-                border-bottom: 1px solid var(--border-color);
-                padding-bottom: 30px;
-            }
-            
-            .header {
-                padding: 25px;
-            }
-        }
-        
-        @media (max-width: 600px) {
-            .header {
-                flex-direction: column;
-            }
-            
-            .contact-info {
-                margin-top: 20px;
-            }
-            
-            .name-title h1 {
-                font-size: 2rem;
-            }
-        }
-        
-        .print-button {
-            display: block;
-            margin: 30px auto 0;
-            background-color: var(--secondary-color);
-            color: white;
-            border: none;
-            padding: 12px 25px;
-            border-radius: 5px;
-            font-family: 'Poppins', sans-serif;
-            font-size: 1rem;
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
-        
-        .print-button:hover {
-            background-color: #2980b9;
-        }
-        
-        @media print {
-            .print-button {
-                display: none;
-            }
-            
-            body {
-                background-color: white;
-                padding: 0;
-            }
-            
-            .resume-container {
-                box-shadow: none;
-            }
-            
-            .contact-item a {
-                color: black;
-                text-decoration: none;
-            }
-        }
+
+        @media print { .actions { display: none; } body { padding: 0; } .resume-wrapper { box-shadow: none; width: 100%; } }
     </style>
-    <script type="application/ld+json">
+	<script type="application/ld+json">
         {
           "@context": "https://schema.org",
           "@type": "Person",
@@ -388,297 +112,128 @@
     </script>
 </head>
 <body>
-    <div class="resume-container">
-        <div class="header">
-            <div class="name-title">
+
+    <div class="resume-wrapper">
+        <header>
+            <div>
                 <h1>Ashrafuzzaman Ashraf</h1>
-                <h2>Full Stack Developer | Laravel | Vue.js | Nuxt.js</h2>
+                <h2>Senior Full Stack Developer</h2>
             </div>
-            <div class="contact-info">
-                <div class="contact-item">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <span>Dhaka, Bangladesh</span>
-                </div>
-                <div class="contact-item">
-                    <i class="fas fa-phone"></i>
-                    <span>+880 1773621713</span>
-                </div>
-                <div class="contact-item">
-                    <i class="fas fa-envelope"></i>
-                    <a href="mailto:ashrafdiu1973@gmail.com">ashrafdiu1973@gmail.com</a>
-                </div>
-               <div class="contact-item">
-                    <i class="fab fa-linkedin"></i>
-                    <a href="https://www.linkedin.com/in/ashrafuzzaman1973" target="_blank">
-                        LinkedIn
-                    </a>
-                </div>
-                
-                <div class="contact-item">
-                    <i class="fab fa-github"></i>
-                    <a href="https://github.com/ashrafuzzaman1973" target="_blank">
-                        GitHub
-                    </a>
-                </div>
-                
-                <div class="contact-item">
-                    <i class="fas fa-user"></i>
-                    <a href="https://about.me/ashrafuzzaman_ashraf" target="_blank">
-                        About Me
-                    </a>
-                </div>
+            <div class="header-contact">
+                <div><i class="fas fa-envelope"></i> <a href="mailto:ashrafdiu1973@gmail.com">ashrafdiu1973@gmail.com</a></div>
+                <div><i class="fas fa-phone"></i> +880 1773621713</div>
+                <div><i class="fab fa-linkedin"></i> <a href="https://linkedin.com/in/ashrafuzzaman1973">LinkedIn</a></div>
+                <div><i class="fab fa-github"></i> <a href="https://github.com/ashrafuzzaman1973">GitHub</a></div>
             </div>
-        </div>
-        
-        <div class="main-content">
-            <div class="left-column">
-                <section class="section professional-summary">
-                    <h3 class="section-title"><i class="fas fa-user"></i> Professional Summary</h3>
-                    <p>Ashrafuzzaman Ashraf is a professional Full Stack Web Developer based in Bangladesh.Results-driven Assistant Manager and Software Engineer with 7+ years of progressive experience in web application development, backend engineering, and team leadership. Proven expertise in PHP, Laravel, Vue.js, RESTful API design, and cloud solutions, with a strong track record of optimizing application performance, leading cross-functional teams, and delivering scalable, user-centric solutions. Adept at Agile methodologies, CI/CD, and modern development practices. Passionate about continuous learning and driving innovation in fast-paced environments.</p>
-                </section>
+        </header>
+
+        <main class="main-content">
+            <section>
+                <h3 class="section-title"><i class="fas fa-briefcase"></i> Professional Experience</h3>
                 
-                <section class="section">
-                    <h3 class="section-title"><i class="fas fa-briefcase"></i> Professional Experience</h3>
-                    
-                    <div class="experience-item">
-                        <div class="job-title">Assistant Manager</div>
-                        <div class="company">Ami Probashi Limited, Dhaka, Bangladesh</div>
-                        <div class="date">Dec 2021 - Present</div>
-                        <ul class="responsibilities">
-                            <li>Designed and implemented application features using Laravel and Vue.js, resulting in a 60% improvement in application speed and user engagement.</li>
-                            <li>Developed and optimized RESTful APIs and managed MySQL databases, reducing response time by 20% and improving data consistency.</li>
-                            <li>Led unit and integration testing initiatives, reducing development errors by 15% and ensuring code stability.</li>
-                            <li>Conducted code reviews and mentored team members, increasing code maintainability by 25%.</li>
-                            <li>Enhanced CI/CD pipelines and deployment processes, reducing deployment errors by 40% and ensuring scalability.</li>
-                            <li>Collaborated with UI/UX designers and cross-functional teams to deliver user-friendly applications, increasing client satisfaction.</li>
-                            <li>Utilized Git, AWS S3, and ClickUp to streamline workflow and improve team collaboration.</li>
-                            <li>Implemented server-side rendering with Nuxt.js, improving SEO and page load speeds by 30%.</li>
-                            <li>Optimized mobile responsiveness with Bootstrap 4, leading to a 25% increase in mobile user retention.</li>
-                        </ul>
+                <div class="item">
+                    <div class="item-header">
+                        <span class="item-title">Assistant Manager (Software Engineer)</span>
+                        <span class="item-date">Dec 2021 — Present</span>
                     </div>
-                    
-                    <div class="experience-item">
-                        <div class="job-title">Software Engineer</div>
-                        <div class="company">BDCOM Online Limited, Dhaka, Bangladesh</div>
-                        <div class="date">Dec 2018 - Nov 2021</div>
-                        <ul class="responsibilities">
-                            <li>Led requirements gathering, architecture design, and implementation of web applications aligned with client needs.</li>
-                            <li>Developed robust backend systems with PHP, Laravel, MySQL, and MSSQL, optimizing performance and data integrity.</li>
-                            <li>Built interactive frontend components with Vue.js, JavaScript, and Bootstrap 4 for seamless user experiences.</li>
-                            <li>Delivered high-quality projects using Agile methodologies and version control (SVN).</li>
-                            <li>Optimized application performance, reducing load times and improving efficiency by 25%.</li>
-                            <li>Collaborated with product managers, designers, and QA engineers to achieve project goals and ensure timely delivery.</li>
-                        </ul>
+                    <div class="item-sub">Ami Probashi Limited, Dhaka</div>
+                    <ul class="bullet-list">
+                        <li>Architected backend modernization by migrating legacy systems to **Laravel 12**, boosting speed and engagement by **60%**.</li>
+                        <li>Reduced API latency by **20%** via query optimization and **Redis**, while cutting deployment errors by **40%** through refined **CI/CD** workflows.</li>
+                        <li>Spearheaded **SEO** and load-time improvements by **30%** using **Nuxt.js** (SSR) and mentored teams to increase maintainability by **25%**.</li>
+                        <li>Managed complex **MySQL** databases and high-volume document workflows using **AWS S3** and **EC2**.</li>
+                    </ul>
+                </div>
+
+                <div class="item">
+                    <div class="item-header">
+                        <span class="item-title">Software Engineer</span>
+                        <span class="item-date">Dec 2018 — Nov 2021</span>
                     </div>
-                    
-                    <div class="experience-item">
-                        <div class="job-title">Jr. Software Engineer</div>
-                        <div class="company">TechVillage, Dhaka, Bangladesh</div>
-                        <div class="date">May 2017 - Nov 2018</div>
-                        <ul class="responsibilities">
-                            <li>Developed efficient, reusable code in PHP and Laravel, improving maintainability and scalability.</li>
-                            <li>Built and optimized MySQL databases, achieving a 20% improvement in database efficiency.</li>
-                            <li>Implemented interactive frontend features with jQuery, enhancing user experience and responsiveness.</li>
-                            <li>Debugged, tested, and optimized applications, reducing loading times by 15%.</li>
-                            <li>Provided customer support for CodeCanyon projects, achieving a 95% customer satisfaction rate.</li>
-                            <li>Delivered 5+ projects on time through effective cross-functional collaboration.</li>
-                        </ul>
+                    <div class="item-sub">BDCOM Online Limited, Dhaka, Bangladesh</div>
+                    <ul class="bullet-list">
+                        <li>Led architecture design for web applications, optimizing performance and reducing load times by **25%**.</li>
+                        <li>Developed robust systems using **PHP, Laravel, MySQL, and MSSQL** with **Agile** methodologies.</li>
+                    </ul>
+                </div>
+
+                <div class="item">
+                    <div class="item-header">
+                        <span class="item-title">Jr. Software Engineer</span>
+                        <span class="item-date">May 2017 — Nov 2018</span>
                     </div>
-                </section>
-                
-                <section class="section">
-                    <h3 class="section-title"><i class="fas fa-project-diagram"></i> Key Projects</h3>
-                    
-                    <div class="project-item">
-                        <div class="job-title">Ami Probashi Portal</div>
-                        <div class="date">Dec 2021 - Present</div>
-                        <p>Government-approved mobile app and web portal assisting Bangladeshi migrants in employment abroad. Developed features for digital completion of government processes, improving accessibility and reducing costs for users.</p>
-                        <div class="project-links">URL: <a href="https://amiprobashi.com" target="_blank">amiprobashi.com</a></div>
+                    <div class="item-sub">TechVillage, Dhaka, Bangladesh</div>
+                    <ul class="bullet-list">
+                        <li>Developed efficient code in **PHP/Laravel**, improving maintainability and database efficiency by **20%**.</li>
+                        <li>Enhanced user responsiveness by **15%** using **jQuery** and supported 5+ successful project deliveries.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section>
+                <h3 class="section-title"><i class="fas fa-project-diagram"></i> Key Project Highlights</h3>
+                <div class="item">
+                    <span class="item-title">Ami Probashi Portal</span>
+                    <p style="font-size: 0.85rem; color: var(--light-text); margin-bottom: 5px;">A government-approved migration platform. I led the technical transition to Laravel 12 and automated global document processing.</p>
+                    <div style="font-size: 0.85rem;"><i class="fas fa-link"></i> <a href="https://amiprobashi.com" target="_blank" style="color: var(--secondary); text-decoration: none;">amiprobashi.com</a></div>
+                </div>
+                <div class="item">
+                    <span class="item-title">NexaBlog (AI Ecosystem)</span>
+                    <p style="font-size: 0.85rem; color: var(--light-text); margin-bottom: 5px;">AI platform utilizing Gemini 1.5 API for voice-to-blog generation.</p>
+                    <div style="font-size: 0.85rem;"><i class="fas fa-link"></i> <a href="https://blog-app-fullstack-react-express.vercel.app/" target="_blank" style="color: var(--secondary); text-decoration: none;">Live Demo</a></div>
+                </div>
+            </section>
+        </main>
+
+        <aside class="sidebar">
+            <section>
+                <h3 class="section-title"><i class="fas fa-code"></i> Skill Matrix</h3>
+                <div class="skill-category">
+                    <h4>Backend & Data</h4>
+                    <div class="tag-container">
+                        <span class="tag">PHP 8.2</span> <span class="tag">Laravel 12</span> 
+                        <span class="tag">Node.js</span> <span class="tag">Python</span> <span class="tag">MySQL</span> <span class="tag">Redis</span>
                     </div>
-                    
-                    <div class="project-item">
-                        <div class="job-title">Norban HRMS</div>
-                        <div class="date">Dec 2018 - Nov 2021</div>
-                        <p>Web-based HR & payroll management software with modules for roster, attendance, leave, bonus, employee, service, performance, payroll, and loan management.</p>
-                        <div class="project-links">URL: <a href="https://hrms.norbangroup.com/login" target="_blank">hrms.norbangroup.com/login</a></div>
+                </div>
+                <div class="skill-category">
+                    <h4>Frontend Ecosystem</h4>
+                    <div class="tag-container">
+                        <span class="tag">Vue.js 3</span> <span class="tag">React.js</span> 
+                        <span class="tag">Nuxt.js</span> <span class="tag">Bootstrap</span> <span class="tag">Tailwind</span>
                     </div>
-                    
-                    <div class="project-item">
-                        <div class="job-title">Direct Sales Software</div>
-                        <div class="date">May 2017 - Nov 2018</div>
-                        <p>Comprehensive sales software with accounting, inventory, CRM, and automated messaging functionalities.</p>
-                        <div class="project-links">URL: <a href="https://app.directsidekick.com/login" target="_blank">app.directsidekick.com/login</a></div>
-                    </div>
-                </section>
-            </div>
-            
-            <div class="right-column">
-                <section class="section">
-                    <h3 class="section-title"><i class="fas fa-star"></i> Core Competencies</h3>
-                    <div class="competency-list">
-                        <div class="competency-item">PHP, Laravel, Lumen</div>
-                        <div class="competency-item">REST API Development</div>
-                        <div class="competency-item">Vue.js (2 & 3), Nuxt.js</div>
-                        <div class="competency-item">JavaScript, HTML, CSS</div>
-                        <div class="competency-item">Bootstrap 4</div>
-                        <div class="competency-item">MySQL, SQL, AWS S3</div>
-                        <div class="competency-item">Git, GitHub, SVN</div>
-                        <div class="competency-item">CI/CD Pipelines</div>
-                        <div class="competency-item">Agile & Scrum Methodologies</div>
-                        <div class="competency-item">Unit & Integration Testing</div>
-                        <div class="competency-item">Performance Optimization</div>
-                        <div class="competency-item">Cross-functional Team Collaboration</div>
-                        <div class="competency-item">Project Management (ClickUp)</div>
-                    </div>
-                </section>
-                
-                <section class="section">
-                    <h3 class="section-title"><i class="fas fa-graduation-cap"></i> Education</h3>
-                    
-                    <div class="education-item">
-                        <div class="job-title">Bachelor of Science in Computer Science & Engineering</div>
-                        <div class="company">Daffodil International University, Dhaka, Bangladesh</div>
-                        <div class="date">Aug 2012 - Feb 2017</div>
-                    </div>
-                    
-                    <div class="education-item">
-                        <div class="job-title">Higher Secondary Certificate (H.S.C)</div>
-                        <div class="company">Saidpur Cantonment Public School and College, Nilphamari, Bangladesh</div>
-                        <div class="date">Jan 2009 - Dec 2010</div>
-                    </div>
-                    
-                    <div class="education-item">
-                        <div class="job-title">Secondary School Certificate (S.S.C)</div>
-                        <div class="company">Dilma Rani Brinda Rani Govt. High School, Nilphamari, Bangladesh</div>
-                        <div class="date">Jan 2004 - Dec 2008</div>
-                    </div>
-                </section>
-                
-                <section class="section">
-                    <h3 class="section-title"><i class="fas fa-language"></i> Languages</h3>
-                    <div class="language-item">
-                        <span class="language-name">Bengali</span>
-                        <span class="language-level">Native</span>
-                    </div>
-                    <div class="language-item">
-                        <span class="language-name">English</span>
-                        <span class="language-level">A2 Listening, B2 Reading, A2 Speaking, B2 Writing</span>
-                    </div>
-                </section>
-                
-                <section class="section">
-                    <h3 class="section-title"><i class="fas fa-certificate"></i> Certifications & Courses</h3>
-                    <p>Lumen Microservices: Create Services and APIs with Lumen (Udemy)</p>
-                </section>
-                
-                <section class="section">
-                    <h3 class="section-title"><i class="fas fa-code"></i> Technical Proficiencies</h3>
-                    <div class="technical-list">
-                        <div class="tech-category">
-                            <h4>Programming</h4>
-                            <ul>
-                                <li>PHP, Laravel, Lumen</li>
-                                <li>JavaScript, Vue.js, Nuxt.js</li>
-                                <li>HTML, CSS, Bootstrap 4</li>
-                            </ul>
-                        </div>
-                        <div class="tech-category">
-                            <h4>Databases</h4>
-                            <ul>
-                                <li>MySQL, SQL, MSSQL</li>
-                            </ul>
-                        </div>
-                        <div class="tech-category">
-                            <h4>Tools</h4>
-                            <ul>
-                                <li>Git, GitHub, SVN</li>
-                                <li>AWS S3, ClickUp</li>
-                            </ul>
-                        </div>
-                        <div class="tech-category">
-                            <h4>Methodologies</h4>
-                            <ul>
-                                <li>Agile, Scrum</li>
-                                <li>CI/CD, Unit Testing</li>
-                            </ul>
-                        </div>
-                    </div>
-                </section>
-                
-                <section class="section">
-                    <h3 class="section-title"><i class="fas fa-info-circle"></i> Additional Information</h3>
-                    <div class="additional-info">
-                        <div class="info-item">
-                            <h4>Nationality</h4>
-                            <p>Bangladeshi</p>
-                        </div>
-                        <div class="info-item">
-                            <h4>Date of Birth</h4>
-                            <p>28 Dec 1992</p>
-                        </div>
-                        <div class="info-item">
-                            <h4>Passport</h4>
-                            <p>A00799749</p>
-                        </div>
-                        <div class="info-item">
-                            <h4>Interests</h4>
-                            <p>Cricket, traveling, continuous learning, technology innovation</p>
-                        </div>
-                    </div>
-                </section>
-            </div>
-        </div>
+                </div>
+            </section>
+
+            <section>
+                <h3 class="section-title"><i class="fas fa-certificate"></i> Training</h3>
+                <div class="training-item">
+                    <strong>React Js With Laravel Build Complete PWA Ecommerce Project</strong>
+                    <span>Udemy - Professional Certification</span>
+                </div>
+                <div class="training-item">
+                    <strong>Lumen Microservices & RESTful API</strong>
+                    <span>Udemy - Professional Certification</span>
+                </div>
+            </section>
+
+            <section>
+                <h3 class="section-title"><i class="fas fa-graduation-cap"></i> Education</h3>
+                <div class="item">
+                    <p style="font-weight: 700; font-size: 0.9rem;">B.Sc. in CSE</p>
+                    <p style="font-size: 0.85rem;">Daffodil Int. University</p>
+                </div>
+            </section>
+
+            <section>
+                <h3 class="section-title"><i class="fas fa-language"></i> Languages</h3>
+                <p style="font-size: 0.85rem;">Bengali (Native), English (Proficient)</p>
+            </section>
+        </aside>
     </div>
-    
-    <button class="print-button" onclick="window.print()">
-        <i class="fas fa-print"></i> Print Resume
-    </button>
-    
-    <script>
-        // Simple script to enhance user experience
-        document.addEventListener('DOMContentLoaded', function() {
-            // Add smooth scrolling for anchor links
-            const links = document.querySelectorAll('a[href^="#"]');
-            links.forEach(link => {
-                link.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    const targetId = this.getAttribute('href');
-                    if(targetId === '#') return;
-                    
-                    const targetElement = document.querySelector(targetId);
-                    if(targetElement) {
-                        window.scrollTo({
-                            top: targetElement.offsetTop - 20,
-                            behavior: 'smooth'
-                        });
-                    }
-                });
-            });
-            
-            // Highlight current section on scroll
-            const sections = document.querySelectorAll('.section');
-            const observerOptions = {
-                root: null,
-                rootMargin: '0px',
-                threshold: 0.1
-            };
-            
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if(entry.isIntersecting) {
-                        entry.target.style.opacity = '1';
-                        entry.target.style.transform = 'translateY(0)';
-                    }
-                });
-            }, observerOptions);
-            
-            sections.forEach(section => {
-                section.style.opacity = '0.7';
-                section.style.transform = 'translateY(20px)';
-                section.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
-                observer.observe(section);
-            });
-        });
-    </script>
+
+    <div class="actions">
+        <button class="btn" onclick="window.print()">Print PDF Resume</button>
+    </div>
+
 </body>
 </html>
